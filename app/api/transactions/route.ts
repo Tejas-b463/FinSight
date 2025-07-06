@@ -9,7 +9,7 @@ export async function GET() {
     const transactions = await Transaction.find().sort({ date: -1 });
     return NextResponse.json(transactions, { status: 200 });
   } catch (error) {
-    console.error("Error fetching transactions:", error); // ✅ Used the error variable
+    console.error("Error fetching transactions:", error); 
     return NextResponse.json({ error: "Failed to fetch transactions" }, { status: 500 });
   }
 }

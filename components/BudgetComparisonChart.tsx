@@ -30,7 +30,7 @@ export default function BudgetComparisonChart({
               <YAxis tick={{ fill: "currentColor" }} />
               <Tooltip
                 contentStyle={{
-                  backgroundColor: "#1f2937", // Tailwind gray-800
+                  backgroundColor: "#1f2937", 
                   borderRadius: "0.375rem",
                   color: "white",
                   border: "none",

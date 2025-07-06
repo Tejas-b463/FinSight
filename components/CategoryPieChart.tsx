@@ -8,7 +8,6 @@ import {
 } from "recharts";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-// Define a strict type for transactions
 type Transaction = {
   category: string;
   amount: number;
@@ -33,7 +32,7 @@ export default function CategoryPieChart({
       acc[txn.category] = (acc[txn.category] || 0) + txn.amount;
       return acc;
     },
-    {} as Record<string, number> // 🔧 Explicit type for initial value
+    {} as Record<string, number> 
   );
 
   const data = Object.entries(categoryTotals).map(([category, amount]) => ({

@@ -21,11 +21,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Mock user data - replace with your actual user data
   const user = {
-    name: 'John Doe',
-    email: 'john.doe@example.com',
-    avatar: '/avatars/john-doe.png', // Optional: path to user avatar
+    name: 'Tejas',
+    email: 'tejas@gmail.com',
+    avatar: '/avatars/tejas.png',
   }
 
   return (

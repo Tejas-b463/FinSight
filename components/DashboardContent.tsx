@@ -19,7 +19,7 @@ type Transaction = {
 };
 
 type MonthlyExpense = {
-  _id: number; // Month number (1-12)
+  _id: number; 
   total: number;
 };
 
